@@ -1,8 +1,8 @@
 #!/bin/bash
 # file: setup.sh
 
-cp ./kubeless.ps  /etc/profile.d 
-source /etc/profile.d 
+sudo cp ./kubeless.sh  /etc/profile.d 
+source /etc/profile.d/kubeless.sh 
 
 export KUBELESS_WORKING_DIR=$GOROOT/src/github.com/kubeless
 
