@@ -6,7 +6,8 @@ source /etc/profile.d/kubeless.sh
 
 export KUBELESS_WORKING_DIR=$GOROOT/src/github.com/kubeless
 
-mkdir -p $KUBELESS_WORKING_DIR
+sudo mkdir -p $KUBELESS_WORKING_DIR
+cd $KUBELESS_WORKING_DIR
 git clone https://github.com/mvranic/kubeless
 cd $KUBELESS_WORKING_DIR/kubeless
 git remote add upstream https://github.com/kubeless/kubeless.git
